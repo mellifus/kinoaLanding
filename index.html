@@ -262,27 +262,38 @@
     </div>
   </section>
 
-  <!-- Demo Widget Section -->
-<section id="demo-widget" class="py-16 px-4 bg-[#011608] text-white fade-in" style="transition-delay:0.1s;">
-  <div class="max-w-2xl mx-auto text-center space-y-6">
-    <h2 class="text-3xl font-bold">Prueba el pago en vivo</h2>
-    <p>Interactúa con nuestro widget de NowPayments directamente aquí:</p>
-    <div class="mx-auto w-full max-w-sm">
-      <iframe
-        src="https://nowpayments.io/embeds/payment-widget?iid=5570543472"
-        width="100%"
-        height="696"
-        frameborder="0"
-        scrolling="no"
-        style="overflow-y: hidden; border-radius: 1rem; box-shadow: 0 0 20px #16DB65;"
-      >
-        Can't load widget
-      </iframe>
+<!-- Complete Demo Section -->
+<section id="demo-complete" class="py-16 px-4 bg-[#011608] text-white fade-in" style="transition-delay:0.1s;">
+  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+    
+    <!-- 1) Widget NowPayments -->
+    <div class="space-y-4 text-center">
+      <h3 class="text-2xl font-bold">1. Widget de pago</h3>
+      <div class="mx-auto w-full max-w-sm rounded-lg shadow-[0_0_20px_#16DB65] overflow-hidden">
+        <iframe
+          src="https://nowpayments.io/embeds/payment-widget?iid=5570543472"
+          width="100%"
+          height="696"
+          frameborder="0"
+          scrolling="no"
+          style="overflow-y: hidden;"
+        >
+          Can't load widget
+        </iframe>
+      </div>
     </div>
-    <p class="text-sm text-white/70">Si no ves el widget, asegúrate de que tu navegador permite iframes externos.</p>
+
+    <!-- 2) QR real y flujo en Trust Wallet -->
+    <div class="space-y-4 text-center">
+      <h3 class="text-2xl font-bold">2. Escanea el QR real</h3>
+      <img
+        src="/assets/qr-tugui-pizzas.png"
+        alt="QR Demo Tugui Pizzas"
+        class="w-full aspect-square object-contain rounded-lg shadow-[0_0_20px_rgba(22,219,101,0.7)]"
+      />
+    </div>
   </div>
 </section>
-
 
   <!-- Contact + CTA + Footer -->
 <section id="contact" class="py-16 px-4 bg-[#011608]">
